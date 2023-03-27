@@ -1,5 +1,6 @@
 import os
 import json
+from pathlib import Path
 from pymongo import MongoClient
 from dotenv import load_dotenv
 
@@ -14,18 +15,15 @@ DB_HOST = os.getenv('DB_HOST')
 DB_PORT = int(os.getenv('DB_PORT'))
 
 
+DIR = str(Path(__file__).resolve().parent)
+COUNTRIES_PATH = DIR + '/countries.json'
+
+
 client = MongoClient(f'mongodb://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/')
 db = client[DB_NAME]
 col = db[DB_COLLECTION]
 
-
-from pathlib import Path
-
 client.drop_database(DB_NAME)
-
-DIR = str(Path(__file__).resolve().parent)
-
-COUNTRIES_PATH = DIR + '/countries.json'
 
 def insert_countries():
     with open(COUNTRIES_PATH) as fp:
