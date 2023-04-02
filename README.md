@@ -24,4 +24,14 @@ The final document of each test is saved in the ```/result``` directory. The res
 
 ![](./assets/python-webframework-loadtest.png)
 
+<html>
+    <div style="display:flex;margin:5px"><div style="width:10px;height:10px;background-color:#2A6099;margin:5px"></div><span>Psycopg</span></div>
+    <div style="display:flex;margin:5px"><div style="width:10px;height:10px;background-color:#224B12;margin:5px"></div><span>PyMongo</span></div>
+    <div style="display:flex;margin:5px"><div style="width:10px;height:10px;background-color:#000000;margin:5px"></div><span>Djongo</span></div>
+    <div style="display:flex;margin:5px"><div style="width:10px;height:10px;background-color:#83CAFF;margin:5px"></div><span>ORM</span></div>
+    <div style="display:flex;margin:5px"><div style="width:10px;height:10px;background-color:#FFFF00;margin:5px"></div><span>Asyncpg</span></div>
+    <div style="display:flex;margin:5px"><div style="width:10px;height:10px;background-color:#FF0000;margin:5px"></div><span>Motor</span></div>
+    <div style="display:flex;margin:5px"><div style="width:10px;height:10px;background-color:#7E0021;margin:5px"></div><span>SQLalchemy-async</span></div>
+</html>
+
 
